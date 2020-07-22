@@ -1,10 +1,11 @@
 import React from "react";
+import logo from 'img/Amazon_logo.svg'
 
 const Header = () =>{
     return (
         <nav class="nav-container">
             <ul class="logo">
-                <li><img src="/img/Amazon_logo.svg" alt="amazon_logo"/></li>
+                <li><img src={logo} alt="amazon_logo"/></li>
             </ul>
             <ul class="navigation-container">
                 <li class="menu-link"><a href="/">Home</a></li>
