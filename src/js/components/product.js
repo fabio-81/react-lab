@@ -1,13 +1,16 @@
 import React from "react";
 
-const Product =({prop})=>{
+const Product =(prop)=>{
 
-    return (
+    return(
 <>
-    <p>Title:{prop}</p>
-    {/* <p>Description:{prop}</p>
-    <p>{prop}</p> */}
-    </>
+    <div>
+        <p>{prop.title}</p>
+        <p>{prop.description}</p>
+        <p>{prop.price}</p>
+    </div>
+
+</>
     )
 }
 
