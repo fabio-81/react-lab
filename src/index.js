@@ -6,12 +6,22 @@ import Product from "components/product";
 // import test from 'img/300-test.png';
 
 const Header = () =>{
-    return <header>Header!</header>
-}
+    return (
+        <nav class="nav-container">
+            <ul class="logo">
+                <li><img src="/img/Amazon_logo.svg" alt="amazon_logo"/></li>
+            </ul>
+            <ul class="navigation-container">
+                <li class="menu-link"><a href="/">Home</a></li>
+                <li class="menu-link"><a href="product-listing">Products</a></li>
+                <li class="menu-link"><a href="registration">Registration</a></li>
+                <li class="menu-link"><a href="sign-in">Login</a></li>
+            </ul>
+        </nav>
 
-const Footer = () =>{
-    return <footer>Footer!</footer>
-}
+    )}
+
+
 
 
 
@@ -67,12 +77,23 @@ const App = () => {
 	return (
         <>
     <Greeting name="Products" />
-    {/* <Header /> */}
-    {/* <Product prop={productArray}/> */}    
+    <Header />
+    <Footer/>    
     
     </>
     )
 }
-
+const Footer = () =>{
+    return (
+    <footer class="footer-container">
+    <ul class="footer-navigation">
+        <li class="menu-link"><a href="/">Home</a></li>
+        <li class="menu-link"><a href="">Shipping and returns</a></li>
+        <li class="menu-link"><a href="">Affiliates</a></li>
+        <li class="menu-link"><a href="">Careers</a></li> 
+        <li class="menu-link"><a href="">Help and Support</a></li> 
+    </ul>
+    </footer>)
+}
 
 ReactDOM.render(<App />, document.getElementById('root'));
