@@ -12,63 +12,67 @@ const Footer = () =>{
     return <footer>Footer!</footer>
 }
 
+
+
 const App = () => {
 
     //Fetch product listing
-    const productArray = [
+    const productData = [
 
     {
-        imgPath:'smartwatch-large.jpg',
+        // imgPath:'smartwatch-large.jpg',
+        Id:1,
         Title:"Fitbit Versa 2",
         Description:"Fitbit Versa 2 Health And Fitness Smartwatch",
-        Category:"Electronics",
         Price:`$263`,
-        featured:true,
+        
     },
  {
-        imgPath:'airpods.jpg',
+        // imgPath:'airpods.jpg',
+        Id:2,
         Title:"Apple AirPods",
         Description:"Apple MMEF2AM/A AirPods Wireless Bluetooth Headset for iPhone",
-        Category:"Electronics",
         Price:`$250`,
-        featured:true,
+        
     },
     {
-        imgPath:'home-camera.jpg',
+        // imgPath:'home-camera.jpg',
+        Id:3,
         Title:"YI 1080p Home Camera",
         Description:"Indoor Wireless IP Security Surveillance System with Night Vision",
-        Category:"Electronics",
         Price:`$35`,
-        featured:true,
+        
     },
     {
-        imgPath:'drone.jpg',
+        // imgPath:'drone.jpg',
+        Id:4,
         Title:"DJI Mavic Mini",
         Description:"2.7K Camera, Controller, 3-Axis Gimbal, GPS, 30 Minutes Flight Time",
-        Category:"Electronics",
         Price:`$499`,
-        featured:true,
+        
     },
     {
-        imgPath:'canon-camera.jpg',
+        // imgPath:'canon-camera.jpg',
+        Id:5,
         Title:"Canon EOS M50",
         Description:"Mirrorless Camera Kit with 15-45mm lens(Black)",
-        Category:"Electronics",
         Price:`$729`,
-        featured:false,
+        
     }
 
     ]
-
+const productArray = productData.map(details => <product key={details.Id} title={details.Title} description={details.Description} price={details.Price}/>)
 
 	return (
         <>
-    <Greeting name="World" />
-    <Header />
+    {/* <Greeting name="Products" /> */}
+    {/* <Header /> */}
+    <p>{productArray}</p>
     
     
     </>
     )
 }
+
 
 ReactDOM.render(<App />, document.getElementById('root'));
