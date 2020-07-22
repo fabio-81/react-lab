@@ -2,5 +2,29 @@ body {
 	margin: 0;
 	background-color: lightgrey;
     font: 1em helvetica, arial, sans-serif;
-    background-image: url('./../img/300-test.png')
+    /* background-image: url('./../img/300-test.png') */
+}
+.nav-container{
+    display: flex;
+    background-color: #03A9F4;
+    align-items: center;
+}
+.logo{
+    width: 200px;
+}
+img{
+    width: 100%;
+}
+.menu-link{
+    padding: 0 20px;
+}
+.navigation-container{
+    display: flex;
+}
+.footer-navigation{
+    display: flex;
+    justify-content: center;
+}
+ul{
+    list-style: none;
 }
