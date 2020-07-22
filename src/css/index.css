@@ -28,3 +28,11 @@ img{
 ul{
     list-style: none;
 }
+.product-container{
+    display: grid;
+    justify-content: center;
+}
+.main-heading{
+    text-align: center;
+    text-decoration: underline;
+}

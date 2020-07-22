@@ -79,7 +79,9 @@ const App = () => {
         <>    
     <Header />
     <Greeting name="Products" />
+    <div class='product-container'>
     {productArray}
+    </div>
     <Footer/>    
     
     </>
