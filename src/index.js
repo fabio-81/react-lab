@@ -6,6 +6,8 @@ import Product from "components/product";
 import Header from "components/Header"
 import Footer from "components/Footer"
 // import test from 'img/300-test.png';
+// import Image1 from "img/smartwatch-large.jpg"
+// import test from 'img/300-test.png';
 
 
     // const Product =(prop)=>{
@@ -28,8 +30,9 @@ const App = () => {
     const productData = [
 
         {
-            // imgPath:'smartwatch-large.jpg',
+            
             Id:1,
+            // imgPath:'img/300-test.png',
             Title:"Fitbit Versa 2",
             Description:"Fitbit Versa 2 Health And Fitness Smartwatch",
             Price:`$263`
@@ -73,10 +76,9 @@ const App = () => {
     const productArray =productData.map(details => <Product key={details.Id} title={details.Title} description={details.Description} price={details.Price}/>)
 
 	return (
-        <>
-    <Greeting name="Products" />
-    
+        <>    
     <Header />
+    <Greeting name="Products" />
     {productArray}
     <Footer/>    
     
