@@ -1,5 +1,5 @@
 import React from "react";
-
+// import Image from "img/airpods.jpg"
 const Product =(prop)=>{
 
     return(
@@ -7,7 +7,8 @@ const Product =(prop)=>{
 <>
     
     <div>
-        {/* <p>{prop.imgPath}</p> */}
+        <div class="image-container">{prop.image}</div>
+        {/* <img src={Image} alt="Just a test image" /> */}
         <p><b>Title:</b> {prop.title}</p>
         <p><b>Description:</b> {prop.description}</p>
         <p><b>Price:</b> {prop.price}</p>
