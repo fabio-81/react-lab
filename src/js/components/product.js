@@ -12,6 +12,7 @@ const Product =(prop)=>{
         <p><b>Title:</b> {prop.title}</p>
         <p><b>Description:</b> {prop.description}</p>
         <p><b>Price:</b> {prop.price}</p>
+        <button onClick={ event =>{alert('Added to Cart!')}}>BUY NOW!</button>
     </div>
     
 </>
